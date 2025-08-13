@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.page {
+  max-width: 1200px;
+  width: 100%;
+  color: #161d25;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  cursor: url("../images/cursor.png") 5 5, auto;
+}
+
+.motto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+
+.motto__title {
+  font-size: 38px;
+  margin: 0;
+}
+
+.motto__description {
+  font-size: 22px;
+  color: #5d7085;
+  margin: 0;
+}
+
+.offer__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin: 0 auto;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  color: #fff;
+  position: relative;
+}
+
+.offer__type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.offer__personal {
+  background: linear-gradient(#fdc624, #e6c434);
+}
+
+.offer__business {
+  background: linear-gradient(#55dce7, #3dcad4);
+}
+
+.offer__developer {
+  background: linear-gradient(#6bdfff, #3dacfc);
+}
+
+.offer__agency {
+  background: linear-gradient(#bfcedc, #939fb3);
+}
+
+.offer__most-popular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: inherit;
+  width: 100%;
+  text-align: center;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag__most-popular {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  justify-content: center;
+}
+
+.tag__most-popular::before {
+  content: "★";
+  display: inline-block;
+  line-height: 1;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.offer__img {
+  width: 196px;
+  height: 196px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.offer__description,
+.offer__price,
+.offer__benefits,
+.offer__button {
+  width: 100%;
+  max-width: 196px;
+}
+
+.offer__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.offer__name {
+  font-size: 21px;
+  margin: 0;
+}
+
+.offer__about {
+  font-size: 12px;
+  margin: 0;
+}
+
+.offer__price {
+  font-size: 67px;
+  font-weight: 700;
+  position: relative;
+  line-height: 1;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 0;
+  min-height: 80px;
+}
+
+.offer__price::before {
+  content: "$";
+  font-size: 16px;
+  position: absolute;
+  top: 0.1em;
+  left: -0.7em;
+}
+
+.offer__benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  list-style: none;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  gap: 19px;
+  width: 100%;
+  padding: 0;
+  min-height: 150px;
+}
+
+.offer__benefits-item {
+  margin: 0;
+}
+
+.offer__benefits-item::before {
+  content: "✓";
+  margin-right: 8px;
+}
+
+.offer__button {
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: url("../images/cursor.png"), pointer;
+  padding: 13px 51px;
+  width: 100%;
+  margin-top: auto;
+  color: white;
+}
+
+.offer__button:focus {
+  outline: none;
+}
+
+.offer__button:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 2px;
+}
+
+.offer__button:hover {
+  text-decoration: underline;
+}
+
+.offer__button:active {
+  background-color: #fff;
+  color: #161d25;
+}
